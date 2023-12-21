@@ -1,0 +1,111 @@
+/* Styling for App Name */
+.app-name{
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styling for description header */
+.app-description{
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styling for user input line */
+.to-do-input {
+    text-align: center;
+    padding: 20px;
+}
+
+.input-field {
+    width: 400px;
+}
+
+
+.to-do-item {
+    width: 65%;
+    text-align: right;
+}
+
+/* Styling to strikethrough text */
+.strikethrough {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+.table-container {
+    margin: 0 auto; /* Center on page and keep equidistance from right and left edge */
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100%; /* Set the container height to 100% of the viewport height */
+    width: 80%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 1px solid transparent; /* Set border to transparent initially */
+    border-radius: 15px; 
+}
+
+/* Set the table layout to fixed and adjust column widths */
+.table-wrapper {
+    padding-top: 10px;
+    width: 50%; /* Set the table width to 50% of the viewport width */
+    margin-left: auto; /* Center the table by setting left margin to auto */
+    margin-right: auto; /* Center the table by setting right margin to auto */
+}
+
+tr {
+    border-radius: 15px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Set hover color */
+#to-do-table tr:hover { 
+    background-color: #e0f2fe;
+    border-radius: 15px; 
+}
+
+
+.to-do-item td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garbage-button {
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+.clear-all {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.complete-checkbox {
+    width: 20px; /* Set the width of the checkbox */
+    height: 20px; /* Set the height of the checkbox */
+    border-radius: 50%; /* Make the checkbox circular */
+}
+
+@media only screen and (max-width: 767px) {
+    /* Set the table layout to fixed and adjust column widths */
+    #to-do-table {
+        width: 90%; /* Set the table width to 50% of the viewport width */
+        margin-left: auto; /* Center the table by setting left margin to auto */
+        margin-right: auto; /* Center the table by setting right margin to auto */
+    }
+
+    .table-wrapper {
+        padding-top: 10px;
+        width: 100%; /* Set the table width to 50% of the viewport width */
+        margin-left: auto; /* Center the table by setting left margin to auto */
+        margin-right: auto; /* Center the table by setting right margin to auto */
+    }
+
+    .input-field {
+        width: 80%;
+        margin-bottom: 20px; /* Add margin between input and button */
+    }
+}

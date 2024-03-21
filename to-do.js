@@ -272,14 +272,15 @@ document.addEventListener('DOMContentLoaded', function()
         // Regular expression to extract the numeric part of the ID used to identify which row was clicked
         let itemCount = parseInt(rowClickedID.match(/\d+/)[0], 10);
 
+        // Get and store to do item HTML elements
         const divElement = document.getElementById(`addItem-${itemCount}-div`);
         const inputElement = document.getElementById(`addItem-${itemCount}-input`);
         const saveIcon = document.getElementById(`save-icon-${itemCount}`);
 
         // Manipulate the div and input elements as needed
-        divElement.style.display = 'none'; // Hide the div
+        divElement.style.display = 'none'; // Hide the div (uneditable to do item text)
         saveIcon.style.display = 'block'; // Show save icon
-        inputElement.style.display = 'block'; // Show the input
+        inputElement.style.display = 'block'; // Show the input element (editable field)
 
         // Add an event listener to the input field to save changes on blur
         inputElement.addEventListener('blur', function () {
